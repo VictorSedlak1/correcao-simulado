@@ -11,12 +11,21 @@
     */
 
     //ENTRADA
+    let valorInicial = Number(prompt("Qual o valor inicial investido?"));
+    let valorFinal =  valorInicial * 2;
 
 
     //PROCESSAMENTO
+    let meses = 0;
+    for(meses = 0; valorInicial <= valorFinal; meses++){
+        valorInicial = valorInicial + (valorInicial * 0.005);
+        //valorInicial = valorInicial * 1.005;
+    }
 
 
     //SAÍDA
+    document.write(`O valor inicial é de R$ ${(valorFinal / 2).toFixed(2)}</br>`);
+    document.write(`Serão necessários ${meses} para duplicar o valor investido!`);
 
 
 </script>

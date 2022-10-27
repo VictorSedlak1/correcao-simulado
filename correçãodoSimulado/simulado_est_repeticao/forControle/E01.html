@@ -9,11 +9,24 @@
     //ENTRADA
     const alunos = parseInt(prompt("Informe quantos alunos a classe possui"))
 
+    let meninos = [];
+    let meninas = [];
+
 
     //PROCESSAMENTO
+    for(let c = 1; c < alunos; c++){
+        nomeProfessor = prompt("Informe o nome do aluno")
+        generoAluno = prompt("Informe o genero do aluno (M - masculino, F - feminino")
+
+        if (generoAluno === "M") {
+            meninos.push(nomeProfessor);
+        } else if (generoAluno === "F") {
+            meninas.push(nomeProfessor);
+        }
+    }
 
 
     //SAÍDA
-
+    document.write("Meninos:" + meninos + "</br> Meninas:" + meninas)
     
 </script>

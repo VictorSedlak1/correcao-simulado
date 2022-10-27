@@ -12,11 +12,24 @@
     */
 
     //ENTRADA
+    const abasteceu = parseInt(prompt("Quantas vezes o Motorista abasteceu?"))
+    const distancia = parseInt(prompt("Qual foi a distancia percorrida pelo Motorista? (KM)"))
 
+    let precos = [];
+    let soma = 0;
+
+    let precoAbasteceu = 0;
 
     //PROCESSAMENTO
+    
+    for(let c = 1; c <= abasteceu; c++){
+        precoAbasteceu = Number(prompt("Informe o preco de cada abastecimento efetuado")) 
+        precos.push(precoAbasteceu);
+         soma = soma + precoAbasteceu;
+        
+    }
 
-
+    document.write("O preço por kilometro percorrido sera de:" + (distancia / soma).toFixed(2) + "</br> Custo total dos abastecimentos:" + soma + "</br> Distancia percorrida:" + distancia)
     //SAÍDA
 
 
